@@ -1,0 +1,13 @@
+.gradle/
+.idea/
+.kotlin/
+/build/
+*/build/
+local.properties
+sign.properties
+*.jks
+*.hprof
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
