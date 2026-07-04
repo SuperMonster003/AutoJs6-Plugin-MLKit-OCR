@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ML Kit OCR (Chinese)</string>
+    <string name="plugin_description">ML Kit Chinese OCR plugin for AutoJs6.</string>
+</resources>
