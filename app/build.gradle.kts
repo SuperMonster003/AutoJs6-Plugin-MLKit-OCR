@@ -15,7 +15,6 @@ val buildTypeDebug = "debug"
 val buildTypeRelease = "release"
 
 android {
-
     namespace = globalApplicationId
     compileSdk = versions.sdkVersionCompile
 
@@ -130,19 +129,43 @@ androidComponents {
 }
 
 dependencies {
-    implementation("org.jetbrains:annotations:26.0.2")
 
     implementation(files("$rootDir/libs/common-plugin-api.aar"))
     implementation(files("$rootDir/libs/paddle-ocr-api.aar"))
 
-    implementation("com.google.mlkit:text-recognition-chinese:16.0.1")
-
     implementation(libs.annotation)
+    implementation(libs.annotations)
+
+    implementation(libs.text.recognition.chinese)
 }
 
 tasks {
     withType(JavaCompile::class.java) {
         options.encoding = "UTF-8"
+    }
+
+    register<Copy>("appendDigestToReleasedFiles") {
+        description = "Appends CRC32 digest to released APK files"
+
+        val src = "release"
+        val dst = "${src}s"
+        val ext = utils.FILE_EXTENSION_APK
+
+        if (!file(src).isDirectory) {
+            return@register
+        }
+
+        from(src); into(dst); include("*.$ext")
+
+        rename { name ->
+            val abi = name.replace(Regex("^(?:.+?)-v${versions.appVersionName}-(.+?)(\\.$ext)$"), "$1")
+            val releasedFileNamePrefix = "${rootProject.name}-v${versions.appVersionName}-$abi"
+            utils.digestCRC32(file("${src}/$name")).let { digest ->
+                "$releasedFileNamePrefix-$digest.$ext"
+            }
+        }
+
+        doLast { println("Destination: ${file(dst)}") }
     }
 }
 

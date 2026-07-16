@@ -1,0 +1,22 @@
+{
+  "changelog_label_hint": "Hint",
+  "changelog_label_feature": "Feature",
+  "changelog_label_fix": "Fix",
+  "changelog_label_improvement": "Improvement",
+  "changelog_label_dependency": "Dependency",
+  "$data": {
+    "v1.0.0": {
+      "released_date": "2026/07/16",
+      "feature": [
+        "Added the ML Kit Chinese OCR plugin service with plugin ID `mlkit-ocr-chinese`, engine `mlkit-ocr`, and variant `chinese`",
+        "Added host discovery and invocation through the shared OCR AIDL action `org.autojs.plugin.PADDLE_OCR`",
+        "Added `recognizeText` and `detect` interfaces that return recognized text, confidence values, and text line bounds",
+        "Added support for encoded image input and raw `ARGB_8888` image buffers, with a SharedMemory read path preferred on Android 13 and later",
+        "Added localized plugin metadata and usage instructions for Spanish, French, Russian, Arabic, Japanese, Korean, English, Simplified Chinese, Hong Kong Traditional Chinese, and Taiwan Traditional Chinese",
+        "Added JSON sources and `.python/generate_markdown.py` generation for README and CHANGELOG files",
+        "Added ABI split APK builds for `arm64-v8a`, `armeabi-v7a`, `x86_64`, and a `universal` APK",
+        "Release APK filenames now include the version, ABI variant, and CRC32 digest"
+      ]
+    }
+  }
+}

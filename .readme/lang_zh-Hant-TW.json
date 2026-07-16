@@ -1,0 +1,31 @@
+{
+  "$name": "繁體中文 (台灣)",
+  "text_current_lowercase": "目前",
+  "text_plugin_synopsis": "用於中文 OCR 的 ML Kit 外掛",
+  "h3_languages_with_ascii": "語言 (Languages)",
+  "p_languages_all_supported_for_readme": "目前 README.md 支援以下語言",
+  "h3_introduction": "簡介",
+  "p_introduction": "AutoJs6 ML Kit OCR 外掛為 AutoJs6 提供基於 Google ML Kit 的中文文字辨識能力, 可回傳辨識文字行, 信賴度和邊界框資訊.",
+  "h3_functions": "功能",
+  "features": [
+    "提供共享 OCR 外掛服務, 外掛 ID 為 `{{ plugin_id }}`, 引擎為 `{{ plugin_engine }}`, 變體為 `{{ plugin_variant }}`.",
+    "透過 `{{ plugin_action }}` 暴露 OCR AIDL 介面, 相容 AutoJs6 宿主端 OCR 外掛探索機制.",
+    "支援 `recognizeText` 回傳文字行列表, 支援 `detect` 回傳文字, 信賴度和文字行邊界框.",
+    "支援編碼圖片輸入和 `ARGB_8888` 原始圖片緩衝區輸入.",
+    "外掛資訊, 使用說明, README 與 CHANGELOG 均支援西班牙文/法文/俄文/阿拉伯文/日文/韓文/英文/簡體中文/香港繁體/台灣繁體.",
+    "基於 `com.google.mlkit:text-recognition-chinese`."
+  ],
+  "h3_plugin_interface": "外掛介面",
+  "p_plugin_interface": "宿主可透過以下身分探索並呼叫外掛",
+  "p_result_shape": "`recognizeText` 回傳字串列表; `detect` 回傳 OCR 結果列表, 每項包含 `text`, `confidence` 和 `bounds`.",
+  "h3_release_history": "發行歷史",
+  "h5_for_more_release_history": "更多發行歷史可參閱",
+  "h3_build": "建置",
+  "text_release_build": "Release 建置",
+  "p_build_params": "建置參數來自 `version.properties`, 目前最低 SDK 為 24, 目標 SDK 為 36",
+  "h3_resource_layout": "資源結構",
+  "p_resource_layout": "`strings.xml` 提供外掛描述在地化; `plugin_instruction.md` 提供宿主端展示的外掛使用說明. README 與 CHANGELOG 由 `.python/generate_markdown.py` 根據 JSON 來源檔產生",
+  "h3_links": "相關連結",
+  "text_link_autojs6_docs": "AutoJs6 文件",
+  "text_link_mlkit_text_recognition": "Google ML Kit 文字辨識文件"
+}

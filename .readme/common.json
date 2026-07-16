@@ -1,0 +1,10 @@
+{
+  "repo_url": "https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR",
+  "docs_autojs6_url": "https://docs.autojs6.com",
+  "mlkit_text_recognition_url": "https://developers.google.com/ml-kit/vision/text-recognition/v2/android",
+  "plugin_action": "org.autojs.plugin.PADDLE_OCR",
+  "plugin_engine": "mlkit-ocr",
+  "plugin_variant": "chinese",
+  "plugin_id": "mlkit-ocr-chinese",
+  "supported_abis": "arm64-v8a, armeabi-v7a, x86_64, universal"
+}

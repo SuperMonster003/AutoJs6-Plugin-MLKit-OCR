@@ -3,6 +3,7 @@
 #deprecated   : Only retained for dependencies of certain libraries (such as MQTT)
 #substitution : LiveData or SharedFlow
 #since        : Sep 25, 2025 (by SuperMonster003)
+annotations = "26.1.0"
 localbroadcastmanager = "1.1.0"
 
 #strictly : 4.12.0
@@ -117,6 +118,7 @@ android-device-names = { module = "com.jaredrummler:android-device-names", versi
 android-logging-log4j = { module = "de.mindpipe.android:android-logging-log4j", version.ref = "android-logging-log4j" }
 animated-svg-view = { module = "com.jaredrummler:animated-svg-view", version.ref = "animated-svg-view" }
 annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
 apache-commons-compress = { module = "org.apache.commons:commons-compress", version.ref = "commons-compress" }
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 arsclib = { module = "io.github.reandroid:ARSCLib", version.ref = "arsclib" }

@@ -48,7 +48,7 @@ public class MlKitOcrService extends Service {
         @Override
         public PluginInfo getInfo() throws RemoteException {
             PluginInfo info = new PluginInfo();
-            info.setName("ML Kit OCR (Chinese)");
+            info.setName(getString(R.string.app_name));
             info.setDescription(getString(R.string.plugin_description));
             info.setAuthor(getString(R.string.plugin_author));
             info.setId(getString(R.string.plugin_id));

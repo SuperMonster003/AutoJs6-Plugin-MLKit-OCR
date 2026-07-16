@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="plugin_description">Complemento OCR chino de ML Kit para AutoJs6</string>
+</resources>

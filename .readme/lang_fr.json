@@ -1,0 +1,31 @@
+{
+  "$name": "Français",
+  "text_current_lowercase": "actuel",
+  "text_plugin_synopsis": "Plugin OCR chinois ML Kit pour AutoJs6",
+  "h3_languages_with_ascii": "Langues",
+  "p_languages_all_supported_for_readme": "Le README.md actuel prend en charge les langues suivantes",
+  "h3_introduction": "Introduction",
+  "p_introduction": "Le plugin AutoJs6 ML Kit OCR fournit a AutoJs6 la reconnaissance de texte chinois basee sur Google ML Kit. Il peut renvoyer les lignes de texte reconnues, les valeurs de confiance et les boites englobantes.",
+  "h3_functions": "Fonctionnalites",
+  "features": [
+    "Fournit le service de plugin OCR partage avec l ID de plugin `{{ plugin_id }}`, le moteur `{{ plugin_engine }}` et la variante `{{ plugin_variant }}`.",
+    "Expose l interface OCR AIDL via `{{ plugin_action }}` et fonctionne avec le mecanisme de decouverte des plugins OCR de l hote AutoJs6.",
+    "Prend en charge `recognizeText` pour les listes de lignes de texte et `detect` pour le texte, la confiance et les limites de ligne.",
+    "Prend en charge les images encodees et les tampons d image bruts `ARGB_8888`.",
+    "Les metadonnees du plugin, les instructions d utilisation, le README et le CHANGELOG sont localises en espagnol/francais/russe/arabe/japonais/coreen/anglais/chinois simplifie/chinois traditionnel de Hong Kong/chinois traditionnel de Taiwan.",
+    "Base sur `com.google.mlkit:text-recognition-chinese`."
+  ],
+  "h3_plugin_interface": "Interface Du Plugin",
+  "p_plugin_interface": "L hote peut decouvrir et appeler le plugin avec l identite suivante",
+  "p_result_shape": "`recognizeText` renvoie une liste de chaines; `detect` renvoie des objets de resultat OCR contenant `text`, `confidence` et `bounds`.",
+  "h3_release_history": "Historique Des Versions",
+  "h5_for_more_release_history": "Pour plus d historique des versions",
+  "h3_build": "Compilation",
+  "text_release_build": "Compilation Release",
+  "p_build_params": "Les parametres de compilation viennent de `version.properties`; le SDK minimum actuel est 24 et le SDK cible est 36",
+  "h3_resource_layout": "Structure Des Ressources",
+  "p_resource_layout": "`strings.xml` contient les descriptions localisees du plugin; `plugin_instruction.md` contient les instructions d utilisation affichees par l hote. Les fichiers README et CHANGELOG sont generes depuis les sources JSON par `.python/generate_markdown.py`",
+  "h3_links": "Liens",
+  "text_link_autojs6_docs": "Documentation AutoJs6",
+  "text_link_mlkit_text_recognition": "Documentation de reconnaissance de texte Google ML Kit"
+}

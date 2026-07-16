@@ -1,0 +1,31 @@
+{
+  "$name": "Русский",
+  "text_current_lowercase": "текущий",
+  "text_plugin_synopsis": "Плагин ML Kit для китайского OCR в AutoJs6",
+  "h3_languages_with_ascii": "Языки",
+  "p_languages_all_supported_for_readme": "Текущий README.md поддерживает следующие языки",
+  "h3_introduction": "Введение",
+  "p_introduction": "Плагин AutoJs6 ML Kit OCR предоставляет AutoJs6 распознавание китайского текста на базе Google ML Kit. Он может возвращать распознанные строки текста, значения уверенности и ограничивающие прямоугольники.",
+  "h3_functions": "Возможности",
+  "features": [
+    "Предоставляет общий сервис OCR плагина с ID `{{ plugin_id }}`, движком `{{ plugin_engine }}` и вариантом `{{ plugin_variant }}`.",
+    "Открывает OCR AIDL интерфейс через `{{ plugin_action }}` и работает с механизмом обнаружения OCR плагинов хоста AutoJs6.",
+    "Поддерживает `recognizeText` для списков строк текста и `detect` для текста, уверенности и границ строк.",
+    "Поддерживает ввод кодированных изображений и ввод сырых буферов изображений `ARGB_8888`.",
+    "Метаданные плагина, инструкции по использованию, README и CHANGELOG локализованы на испанский/французский/русский/арабский/японский/корейский/английский/упрощенный китайский/традиционный китайский Гонконга/традиционный китайский Тайваня.",
+    "Основан на `com.google.mlkit:text-recognition-chinese`."
+  ],
+  "h3_plugin_interface": "Интерфейс Плагина",
+  "p_plugin_interface": "Хост может обнаруживать и вызывать плагин со следующей идентичностью",
+  "p_result_shape": "`recognizeText` возвращает список строк; `detect` возвращает объекты результата OCR с полями `text`, `confidence` и `bounds`.",
+  "h3_release_history": "История Выпусков",
+  "h5_for_more_release_history": "Больше истории выпусков",
+  "h3_build": "Сборка",
+  "text_release_build": "Release сборка",
+  "p_build_params": "Параметры сборки берутся из `version.properties`; текущий минимальный SDK равен 24, целевой SDK равен 36",
+  "h3_resource_layout": "Структура Ресурсов",
+  "p_resource_layout": "`strings.xml` содержит локализованные описания плагина; `plugin_instruction.md` содержит инструкции по использованию, показываемые хостом. README и CHANGELOG генерируются из JSON источников с помощью `.python/generate_markdown.py`",
+  "h3_links": "Ссылки",
+  "text_link_autojs6_docs": "Документация AutoJs6",
+  "text_link_mlkit_text_recognition": "Документация распознавания текста Google ML Kit"
+}

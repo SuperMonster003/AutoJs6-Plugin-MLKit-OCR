@@ -1,0 +1,31 @@
+{
+  "$name": "Español",
+  "text_current_lowercase": "actual",
+  "text_plugin_synopsis": "Complemento OCR chino de ML Kit para AutoJs6",
+  "h3_languages_with_ascii": "Idiomas",
+  "p_languages_all_supported_for_readme": "El README.md actual admite los siguientes idiomas",
+  "h3_introduction": "Introduccion",
+  "p_introduction": "El complemento AutoJs6 ML Kit OCR proporciona a AutoJs6 reconocimiento de texto chino basado en Google ML Kit. Puede devolver lineas de texto reconocidas, valores de confianza y cuadros delimitadores.",
+  "h3_functions": "Funciones",
+  "features": [
+    "Proporciona el servicio compartido de complemento OCR con ID de complemento `{{ plugin_id }}`, motor `{{ plugin_engine }}` y variante `{{ plugin_variant }}`.",
+    "Expone la interfaz OCR AIDL mediante `{{ plugin_action }}` y funciona con el flujo de descubrimiento de complementos OCR del host AutoJs6.",
+    "Admite `recognizeText` para listas de lineas de texto y `detect` para texto, confianza y limites de linea.",
+    "Admite entrada de imagen codificada y entrada de bufer de imagen sin procesar `ARGB_8888`.",
+    "Los metadatos del complemento, las instrucciones de uso, README y CHANGELOG estan localizados en espanol/frances/ruso/arabe/japones/coreano/ingles/chino simplificado/chino tradicional de Hong Kong/chino tradicional de Taiwan.",
+    "Basado en `com.google.mlkit:text-recognition-chinese`."
+  ],
+  "h3_plugin_interface": "Interfaz Del Complemento",
+  "p_plugin_interface": "El host puede descubrir e invocar el complemento con la siguiente identidad",
+  "p_result_shape": "`recognizeText` devuelve una lista de cadenas; `detect` devuelve objetos de resultado OCR que contienen `text`, `confidence` y `bounds`.",
+  "h3_release_history": "Historial De Versiones",
+  "h5_for_more_release_history": "Para mas historial de versiones",
+  "h3_build": "Compilacion",
+  "text_release_build": "Compilacion Release",
+  "p_build_params": "Los parametros de compilacion vienen de `version.properties`; el SDK minimo actual es 24 y el SDK objetivo es 36",
+  "h3_resource_layout": "Estructura De Recursos",
+  "p_resource_layout": "`strings.xml` contiene descripciones localizadas del complemento; `plugin_instruction.md` contiene instrucciones de uso mostradas por el host. Los archivos README y CHANGELOG se generan desde fuentes JSON mediante `.python/generate_markdown.py`",
+  "h3_links": "Enlaces",
+  "text_link_autojs6_docs": "Documentacion de AutoJs6",
+  "text_link_mlkit_text_recognition": "Documentacion de reconocimiento de texto de Google ML Kit"
+}

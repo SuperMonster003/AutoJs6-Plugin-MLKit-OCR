@@ -1,0 +1,31 @@
+{
+  "$name": "한국어",
+  "text_current_lowercase": "현재",
+  "text_plugin_synopsis": "AutoJs6용 ML Kit 중국어 OCR 플러그인",
+  "h3_languages_with_ascii": "언어 (Languages)",
+  "p_languages_all_supported_for_readme": "현재 README.md 는 다음 언어를 지원합니다",
+  "h3_introduction": "소개",
+  "p_introduction": "AutoJs6 ML Kit OCR 플러그인은 AutoJs6 에 Google ML Kit 기반 중국어 텍스트 인식 기능을 제공합니다. 인식된 텍스트 줄, 신뢰도, 경계 상자 정보를 반환할 수 있습니다.",
+  "h3_functions": "기능",
+  "features": [
+    "공유 OCR 플러그인 서비스를 제공합니다. 플러그인 ID 는 `{{ plugin_id }}`, 엔진은 `{{ plugin_engine }}`, 변형은 `{{ plugin_variant }}` 입니다.",
+    "`{{ plugin_action }}` 로 OCR AIDL 인터페이스를 노출하며 AutoJs6 호스트의 OCR 플러그인 검색 흐름과 호환됩니다.",
+    "`recognizeText` 는 텍스트 줄 목록을 반환하고 `detect` 는 텍스트, 신뢰도, 텍스트 줄 경계 상자를 반환합니다.",
+    "인코딩된 이미지 입력과 `ARGB_8888` 원시 이미지 버퍼 입력을 지원합니다.",
+    "플러그인 정보, 사용 설명, README, CHANGELOG 는 스페인어/프랑스어/러시아어/아랍어/일본어/한국어/영어/중국어 간체/홍콩 번체 중국어/대만 번체 중국어를 지원합니다.",
+    "`com.google.mlkit:text-recognition-chinese` 를 기반으로 합니다."
+  ],
+  "h3_plugin_interface": "플러그인 인터페이스",
+  "p_plugin_interface": "호스트는 다음 식별 정보로 플러그인을 검색하고 호출할 수 있습니다",
+  "p_result_shape": "`recognizeText` 는 문자열 목록을 반환합니다; `detect` 는 `text`, `confidence`, `bounds` 를 포함하는 OCR 결과 객체를 반환합니다.",
+  "h3_release_history": "릴리스 기록",
+  "h5_for_more_release_history": "더 많은 릴리스 기록",
+  "h3_build": "빌드",
+  "text_release_build": "Release 빌드",
+  "p_build_params": "빌드 매개변수는 `version.properties` 에서 가져옵니다. 현재 최소 SDK 는 24 이고 대상 SDK 는 36 입니다",
+  "h3_resource_layout": "리소스 구조",
+  "p_resource_layout": "`strings.xml` 은 현지화된 플러그인 설명을 제공합니다; `plugin_instruction.md` 는 호스트에 표시되는 사용 설명을 제공합니다. README 와 CHANGELOG 는 `.python/generate_markdown.py` 가 JSON 소스에서 생성합니다",
+  "h3_links": "관련 링크",
+  "text_link_autojs6_docs": "AutoJs6 문서",
+  "text_link_mlkit_text_recognition": "Google ML Kit 텍스트 인식 문서"
+}

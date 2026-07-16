@@ -1,0 +1,12 @@
+# v1.0.0
+
+###### 2026/07/16
+
+* `追加` ML Kit 中国語 OCR プラグインサービスを追加しました. プラグイン ID は `mlkit-ocr-chinese`, エンジンは `mlkit-ocr`, バリアントは `chinese` です
+* `追加` 共有 OCR AIDL action `org.autojs.plugin.PADDLE_OCR` によるホスト検出と呼び出しを追加しました
+* `追加` `recognizeText` と `detect` インターフェイスを追加しました. 認識テキスト, 信頼度, テキスト行の境界ボックスを返します
+* `追加` エンコード済み画像入力と `ARGB_8888` 生画像バッファ入力を追加しました. Android 13 以降では SharedMemory 読み取りを優先します
+* `追加` プラグイン情報と使用説明の多言語リソースを追加しました: スペイン語/フランス語/ロシア語/アラビア語/日本語/韓国語/英語/簡体字中国語/香港繁体字中国語/台湾繁体字中国語
+* `追加` README と CHANGELOG 用の JSON ソースと `.python/generate_markdown.py` 生成フローを追加しました
+* `追加` `arm64-v8a`/`armeabi-v7a`/`x86_64` と `universal` APK の ABI 分割ビルドを追加しました
+* `追加` リリース APK ファイル名にバージョン, ABI バリアント, CRC32 ダイジェストを含めました
