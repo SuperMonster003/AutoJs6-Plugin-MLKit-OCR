@@ -1,7 +1,7 @@
 {
   "$name": "العربية",
   "text_current_lowercase": "الحالي",
-  "text_plugin_synopsis": "مكون ML Kit OCR الصيني الإضافي لـ AutoJs6",
+  "text_plugin_synopsis": "التعرف على النصوص الصينية باستخدام Google ML Kit",
   "h3_languages_with_ascii": "اللغات",
   "p_languages_all_supported_for_readme": "يدعم README.md الحالي اللغات التالية",
   "h3_introduction": "مقدمة",

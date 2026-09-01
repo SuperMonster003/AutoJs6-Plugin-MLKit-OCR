@@ -1,6 +1,12 @@
+******
+
+### Historial De Versiones
+
+******
+
 # v1.0.0
 
-###### 2026/07/16
+###### 2026/09/01
 
 * `Nuevo` Se agrego el servicio de complemento OCR chino de ML Kit con ID de complemento `mlkit-ocr-chinese`, motor `mlkit-ocr` y variante `chinese`
 * `Nuevo` Se agrego descubrimiento e invocacion del host mediante la accion OCR AIDL compartida `org.autojs.plugin.PADDLE_OCR`
@@ -10,3 +16,5 @@
 * `Nuevo` Se agregaron fuentes JSON y generacion `.python/generate_markdown.py` para archivos README y CHANGELOG
 * `Nuevo` Se agregaron compilaciones APK separadas por ABI para `arm64-v8a`, `armeabi-v7a`, `x86_64` y un APK `universal`
 * `Nuevo` Los nombres de APK de publicacion ahora incluyen la version, la variante ABI y el resumen CRC32
+* `Mejora` Unificar el diseño del README y la gestión de versiones de la plataforma Gradle
+* `Mejora` Simplificar la descripción del complemento y normalizar la puntuación de los recursos multilingües

@@ -8,15 +8,11 @@
     </picture>
   </p>
 
-  <p>用於中文 OCR 的 ML Kit 外掛</p>
+  <p>使用 Google ML Kit 的中文 OCR</p>
 
   <p>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?label=Release"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?color=A24232&label=Issues"/></a>
-    <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/commit/5101d138468e1a7a68a443635ec455c7bc0bd632"><img alt="Created" src="https://img.shields.io/date/1783182996?color=2e7d32&label=Created"/></a>
-    <br>
-    <a href="https://developer.android.com/studio/archive"><img alt="Android Studio" src="https://img.shields.io/badge/Android%20Studio-2023.3+-B64FC8"/></a>
-    <a href="https://www.jetbrains.com/idea/download/other.html"><img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-2023.3+-EE4677"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?color=534BAE&label=License"/></a>
   </p>
 </div>
@@ -86,7 +82,7 @@ plugin id: mlkit-ocr-chinese
 
 # v1.0.0
 
-###### 2026/07/16
+###### 2026/09/01
 
 * `新增` ML Kit 中文 OCR 外掛服務, 外掛 ID 為 `mlkit-ocr-chinese`, 引擎為 `mlkit-ocr`, 變體為 `chinese`
 * `新增` 支援透過共享 OCR AIDL action `org.autojs.plugin.PADDLE_OCR` 探索並呼叫外掛
@@ -96,10 +92,12 @@ plugin id: mlkit-ocr-chinese
 * `新增` README 和 CHANGELOG 的 JSON 來源檔及 `.python/generate_markdown.py` 產生流程
 * `新增` 按 ABI 建置 APK, 包括 `arm64-v8a`/`armeabi-v7a`/`x86_64` 以及 `universal` 通用包
 * `新增` 發布 APK 檔名包含版本號, ABI 變體和 CRC32 摘要
+* `最佳化` 統一 README 版式與 Gradle 平台版本管理方式
+* `最佳化` 精簡外掛描述並規範多語言資源中的標點符號
 
 ##### 更多發行歷史可參閱
 
-* [CHANGELOG-zh-Hant-TW.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/.changelog/CHANGELOG-zh-Hant-TW.md)
+* [CHANGELOG-zh-Hant-TW.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/app/src/main/assets/doc/CHANGELOG-zh-Hant-TW.md)
 
 ******
 

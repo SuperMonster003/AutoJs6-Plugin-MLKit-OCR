@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">AutoJs6 用 ML Kit 中国語 OCR プラグイン</string>
+    <string name="plugin_description">Google ML Kit を利用した中国語 OCR</string>
 </resources>

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">مكون ML Kit OCR الصيني الإضافي لـ AutoJs6</string>
+    <string name="plugin_description">التعرف على النصوص الصينية باستخدام Google ML Kit</string>
 </resources>

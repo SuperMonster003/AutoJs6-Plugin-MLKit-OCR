@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">ML Kit Plugin for Chinese OCR</string>
+    <string name="plugin_description">Chinese OCR powered by Google ML Kit</string>
 </resources>

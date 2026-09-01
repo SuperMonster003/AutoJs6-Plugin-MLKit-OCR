@@ -8,15 +8,11 @@
     </picture>
   </p>
 
-  <p>مكون ML Kit OCR الصيني الإضافي لـ AutoJs6</p>
+  <p>التعرف على النصوص الصينية باستخدام Google ML Kit</p>
 
   <p>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?label=Release"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?color=A24232&label=Issues"/></a>
-    <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/commit/5101d138468e1a7a68a443635ec455c7bc0bd632"><img alt="Created" src="https://img.shields.io/date/1783182996?color=2e7d32&label=Created"/></a>
-    <br>
-    <a href="https://developer.android.com/studio/archive"><img alt="Android Studio" src="https://img.shields.io/badge/Android%20Studio-2023.3+-B64FC8"/></a>
-    <a href="https://www.jetbrains.com/idea/download/other.html"><img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-2023.3+-EE4677"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?color=534BAE&label=License"/></a>
   </p>
 </div>
@@ -86,7 +82,7 @@ plugin id: mlkit-ocr-chinese
 
 # v1.0.0
 
-###### 2026/07/16
+###### 2026/09/01
 
 * `جديد` تمت إضافة خدمة مكون ML Kit OCR الصيني الإضافي بمعرف `mlkit-ocr-chinese`, ومحرك `mlkit-ocr`, ومتغير `chinese`
 * `جديد` تمت إضافة اكتشاف المضيف والاستدعاء عبر إجراء OCR AIDL المشترك `org.autojs.plugin.PADDLE_OCR`
@@ -96,10 +92,12 @@ plugin id: mlkit-ocr-chinese
 * `جديد` تمت إضافة مصادر JSON وتوليد `.python/generate_markdown.py` لملفات README و CHANGELOG
 * `جديد` تمت إضافة حزم APK مقسمة حسب ABI لـ `arm64-v8a`, و `armeabi-v7a`, و `x86_64`, وحزمة APK `universal`
 * `جديد` أسماء ملفات APK للإصدار تتضمن الآن الإصدار, ومتغير ABI, وملخص CRC32
+* `تحسين` توحيد تخطيط README وطريقة إدارة إصدارات منصة Gradle
+* `تحسين` تبسيط وصف المكون الإضافي وتوحيد علامات الترقيم في الموارد متعددة اللغات
 
 ##### لمزيد من تاريخ الإصدارات
 
-* [CHANGELOG-ar.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/.changelog/CHANGELOG-ar.md)
+* [CHANGELOG-ar.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/app/src/main/assets/doc/CHANGELOG-ar.md)
 
 ******
 

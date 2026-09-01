@@ -6,7 +6,7 @@
   "changelog_label_dependency": "Dependance",
   "$data": {
     "v1.0.0": {
-      "released_date": "2026/07/16",
+      "released_date": "2026/09/01",
       "feature": [
         "Ajout du service de plugin OCR chinois ML Kit avec l ID de plugin `mlkit-ocr-chinese`, le moteur `mlkit-ocr` et la variante `chinese`",
         "Ajout de la decouverte et de l appel par l action OCR AIDL partagee `org.autojs.plugin.PADDLE_OCR`",
@@ -16,6 +16,10 @@
         "Ajout des sources JSON et de la generation `.python/generate_markdown.py` pour les fichiers README et CHANGELOG",
         "Ajout des APK separes par ABI pour `arm64-v8a`, `armeabi-v7a`, `x86_64` et un APK `universal`",
         "Les noms des APK de publication incluent maintenant la version, la variante ABI et le resume CRC32"
+      ],
+      "improvement": [
+        "Uniformiser la mise en page du README et la gestion des versions de la plateforme Gradle",
+        "Simplifier la description du plugin et normaliser la ponctuation des ressources multilingues"
       ]
     }
   }

@@ -1,6 +1,12 @@
+******
+
+### 發行歷史
+
+******
+
 # v1.0.0
 
-###### 2026/07/16
+###### 2026/09/01
 
 * `新增` ML Kit 中文 OCR 插件服務, 插件 ID 為 `mlkit-ocr-chinese`, 引擎為 `mlkit-ocr`, 變體為 `chinese`
 * `新增` 支援通過共享 OCR AIDL action `org.autojs.plugin.PADDLE_OCR` 發現並調用插件
@@ -10,3 +16,5 @@
 * `新增` README 和 CHANGELOG 的 JSON 源文件及 `.python/generate_markdown.py` 生成流程
 * `新增` 按 ABI 構建 APK, 包括 `arm64-v8a`/`armeabi-v7a`/`x86_64` 以及 `universal` 通用包
 * `新增` 發布 APK 文件名包含版本號, ABI 變體和 CRC32 摘要
+* `優化` 統一 README 版式與 Gradle 平台版本管理方式
+* `優化` 精簡插件描述並規範多語言資源中的標點符號

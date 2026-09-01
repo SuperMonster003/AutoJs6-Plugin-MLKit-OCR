@@ -6,7 +6,7 @@
   "changelog_label_dependency": "의존성",
   "$data": {
     "v1.0.0": {
-      "released_date": "2026/07/16",
+      "released_date": "2026/09/01",
       "feature": [
         "ML Kit 중국어 OCR 플러그인 서비스를 추가했습니다. 플러그인 ID 는 `mlkit-ocr-chinese`, 엔진은 `mlkit-ocr`, 변형은 `chinese` 입니다",
         "공유 OCR AIDL action `org.autojs.plugin.PADDLE_OCR` 를 통한 호스트 검색과 호출을 추가했습니다",
@@ -16,6 +16,10 @@
         "README 와 CHANGELOG 용 JSON 소스와 `.python/generate_markdown.py` 생성 흐름을 추가했습니다",
         "`arm64-v8a`/`armeabi-v7a`/`x86_64` 와 `universal` APK 의 ABI 분할 빌드를 추가했습니다",
         "릴리스 APK 파일 이름에 버전, ABI 변형, CRC32 다이제스트를 포함했습니다"
+      ],
+      "improvement": [
+        "README 레이아웃과 Gradle 플랫폼 버전 관리 방식을 통일",
+        "플러그인 설명을 간결하게 다듬고 다국어 리소스의 문장 부호를 통일"
       ]
     }
   }

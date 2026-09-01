@@ -1,5 +1,8 @@
 {
   "repo_url": "https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR",
+  "repo_slug": "SuperMonster003/AutoJs6-Plugin-MLKit-OCR",
+  "icon_alt": "autojs6-plugin-mlkit-ocr-ic-launcher",
+  "license_url": "{{ repo_url }}/blob/master/LICENSE",
   "docs_autojs6_url": "https://docs.autojs6.com",
   "mlkit_text_recognition_url": "https://developers.google.com/ml-kit/vision/text-recognition/v2/android",
   "plugin_action": "org.autojs.plugin.PADDLE_OCR",

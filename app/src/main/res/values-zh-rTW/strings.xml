@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">用於中文 OCR 的 ML Kit 外掛</string>
+    <string name="plugin_description">使用 Google ML Kit 的中文 OCR</string>
 </resources>

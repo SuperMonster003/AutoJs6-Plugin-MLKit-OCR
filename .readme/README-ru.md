@@ -8,15 +8,11 @@
     </picture>
   </p>
 
-  <p>Плагин ML Kit для китайского OCR в AutoJs6</p>
+  <p>Распознавание китайского текста с помощью Google ML Kit</p>
 
   <p>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?label=Release"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?color=A24232&label=Issues"/></a>
-    <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/commit/5101d138468e1a7a68a443635ec455c7bc0bd632"><img alt="Created" src="https://img.shields.io/date/1783182996?color=2e7d32&label=Created"/></a>
-    <br>
-    <a href="https://developer.android.com/studio/archive"><img alt="Android Studio" src="https://img.shields.io/badge/Android%20Studio-2023.3+-B64FC8"/></a>
-    <a href="https://www.jetbrains.com/idea/download/other.html"><img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-2023.3+-EE4677"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/SuperMonster003/AutoJs6-Plugin-MLKit-OCR?color=534BAE&label=License"/></a>
   </p>
 </div>
@@ -86,7 +82,7 @@ plugin id: mlkit-ocr-chinese
 
 # v1.0.0
 
-###### 2026/07/16
+###### 2026/09/01
 
 * `Добавлено` Добавлен сервис плагина ML Kit для китайского OCR с ID `mlkit-ocr-chinese`, движком `mlkit-ocr` и вариантом `chinese`
 * `Добавлено` Добавлены обнаружение и вызов хостом через общее OCR AIDL действие `org.autojs.plugin.PADDLE_OCR`
@@ -96,10 +92,12 @@ plugin id: mlkit-ocr-chinese
 * `Добавлено` Добавлены JSON источники и генерация `.python/generate_markdown.py` для файлов README и CHANGELOG
 * `Добавлено` Добавлены APK сборки с разделением ABI для `arm64-v8a`, `armeabi-v7a`, `x86_64` и APK `universal`
 * `Добавлено` Имена APK файлов выпуска теперь включают версию, вариант ABI и дайджест CRC32
+* `Улучшение` Унифицировать оформление README и управление версиями платформы Gradle
+* `Улучшение` Сократить описание плагина и унифицировать пунктуацию в многоязычных ресурсах
 
 ##### Больше истории выпусков
 
-* [CHANGELOG-ru.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/.changelog/CHANGELOG-ru.md)
+* [CHANGELOG-ru.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/app/src/main/assets/doc/CHANGELOG-ru.md)
 
 ******
 

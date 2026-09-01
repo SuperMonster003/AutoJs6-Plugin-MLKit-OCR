@@ -6,7 +6,7 @@
   "changelog_label_dependency": "Зависимость",
   "$data": {
     "v1.0.0": {
-      "released_date": "2026/07/16",
+      "released_date": "2026/09/01",
       "feature": [
         "Добавлен сервис плагина ML Kit для китайского OCR с ID `mlkit-ocr-chinese`, движком `mlkit-ocr` и вариантом `chinese`",
         "Добавлены обнаружение и вызов хостом через общее OCR AIDL действие `org.autojs.plugin.PADDLE_OCR`",
@@ -16,6 +16,10 @@
         "Добавлены JSON источники и генерация `.python/generate_markdown.py` для файлов README и CHANGELOG",
         "Добавлены APK сборки с разделением ABI для `arm64-v8a`, `armeabi-v7a`, `x86_64` и APK `universal`",
         "Имена APK файлов выпуска теперь включают версию, вариант ABI и дайджест CRC32"
+      ],
+      "improvement": [
+        "Унифицировать оформление README и управление версиями платформы Gradle",
+        "Сократить описание плагина и унифицировать пунктуацию в многоязычных ресурсах"
       ]
     }
   }

@@ -1,7 +1,7 @@
 {
   "$name": "Русский",
   "text_current_lowercase": "текущий",
-  "text_plugin_synopsis": "Плагин ML Kit для китайского OCR в AutoJs6",
+  "text_plugin_synopsis": "Распознавание китайского текста с помощью Google ML Kit",
   "h3_languages_with_ascii": "Языки",
   "p_languages_all_supported_for_readme": "Текущий README.md поддерживает следующие языки",
   "h3_introduction": "Введение",

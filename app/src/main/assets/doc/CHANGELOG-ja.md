@@ -1,6 +1,12 @@
+******
+
+### リリース履歴
+
+******
+
 # v1.0.0
 
-###### 2026/07/16
+###### 2026/09/01
 
 * `追加` ML Kit 中国語 OCR プラグインサービスを追加しました. プラグイン ID は `mlkit-ocr-chinese`, エンジンは `mlkit-ocr`, バリアントは `chinese` です
 * `追加` 共有 OCR AIDL action `org.autojs.plugin.PADDLE_OCR` によるホスト検出と呼び出しを追加しました
@@ -10,3 +16,5 @@
 * `追加` README と CHANGELOG 用の JSON ソースと `.python/generate_markdown.py` 生成フローを追加しました
 * `追加` `arm64-v8a`/`armeabi-v7a`/`x86_64` と `universal` APK の ABI 分割ビルドを追加しました
 * `追加` リリース APK ファイル名にバージョン, ABI バリアント, CRC32 ダイジェストを含めました
+* `改善` README のレイアウトと Gradle プラットフォームのバージョン管理方式を統一
+* `改善` プラグインの説明を簡潔にし, 多言語リソースの句読点を統一

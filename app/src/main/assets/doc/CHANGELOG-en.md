@@ -1,6 +1,12 @@
+******
+
+### Release History
+
+******
+
 # v1.0.0
 
-###### 2026/07/16
+###### 2026/09/01
 
 * `Feature` Added the ML Kit Chinese OCR plugin service with plugin ID `mlkit-ocr-chinese`, engine `mlkit-ocr`, and variant `chinese`
 * `Feature` Added host discovery and invocation through the shared OCR AIDL action `org.autojs.plugin.PADDLE_OCR`
@@ -10,3 +16,5 @@
 * `Feature` Added JSON sources and `.python/generate_markdown.py` generation for README and CHANGELOG files
 * `Feature` Added ABI split APK builds for `arm64-v8a`, `armeabi-v7a`, `x86_64`, and a `universal` APK
 * `Feature` Release APK filenames now include the version, ABI variant, and CRC32 digest
+* `Improvement` Standardize the README layout and Gradle platform version management
+* `Improvement` Refine the plugin description and normalize punctuation in multilingual resources
