@@ -80,6 +80,12 @@ plugin id: mlkit-ocr-chinese
 
 ******
 
+# v1.0.1
+
+###### 2026/09/11
+
+* `Улучшение` Проверка выравнивания страниц 16 KB для 64-битных нативных библиотек при сборке, включая контракт manifest и отчеты JSON
+
 # v1.0.0
 
 ###### 2026/09/01
@@ -142,3 +148,6 @@ app/src/main/res/raw-*/plugin_instruction.md
 
 - Документация AutoJs6: https://docs.autojs6.com
 - Документация распознавания текста Google ML Kit: https://developers.google.com/ml-kit/vision/text-recognition/v2/android
+
+
+[16 KB page alignment and build verification](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/docs/16kb.md)

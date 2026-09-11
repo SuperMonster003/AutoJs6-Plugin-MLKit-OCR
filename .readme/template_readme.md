@@ -115,3 +115,6 @@ app/src/main/res/raw-*/plugin_instruction.md
 
 - {{ text_link_autojs6_docs }}: {{ docs_autojs6_url }}
 - {{ text_link_mlkit_text_recognition }}: {{ mlkit_text_recognition_url }}
+
+
+[16 KB page alignment and build verification](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/docs/16kb.md)

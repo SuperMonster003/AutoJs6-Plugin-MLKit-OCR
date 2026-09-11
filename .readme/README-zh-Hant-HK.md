@@ -80,6 +80,12 @@ plugin id: mlkit-ocr-chinese
 
 ******
 
+# v1.0.1
+
+###### 2026/09/11
+
+* `優化` 建置階段校驗 64 位原生程式庫的 16 KB 頁面大小對齊, 檢查 manifest 契約並輸出 JSON 報告
+
 # v1.0.0
 
 ###### 2026/09/01
@@ -142,3 +148,6 @@ app/src/main/res/raw-*/plugin_instruction.md
 
 - AutoJs6 文件: https://docs.autojs6.com
 - Google ML Kit 文本識別文件: https://developers.google.com/ml-kit/vision/text-recognition/v2/android
+
+
+[16 KB page alignment and build verification](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-OCR/blob/master/docs/16kb.md)
