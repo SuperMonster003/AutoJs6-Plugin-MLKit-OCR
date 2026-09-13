@@ -57,6 +57,7 @@ The AutoJs6 ML Kit OCR Plugin provides Google ML Kit based Chinese text recognit
 - Plugin metadata, usage instructions, README, and CHANGELOG are localized for Spanish, French, Russian, Arabic, Japanese, Korean, English, Simplified Chinese, Hong Kong Traditional Chinese, and Taiwan Traditional Chinese.
 - Built on `com.google.mlkit:text-recognition-chinese`.
 - Images may contain at most 16777216 pixels; raw image buffers are limited to 64 MiB
+- Encoded image input is limited to 64 MiB and supports file descriptors and pipes
 
 ******
 
@@ -86,6 +87,8 @@ plugin id: mlkit-ocr-chinese
 ###### 2026/09/13
 
 * `Fix` Plugin center version and ABI information matches the installed plugin APK
+* `Fix` Encoded image input is limited to 64 MiB and supports file descriptors and pipes
+* `Fix` Version dates use a consistent English format
 * `Improvement` Validate release APK versions, signing and the complete variant set before creating download artifacts
 * `Improvement` Images may contain at most 16777216 pixels; raw image buffers are limited to 64 MiB
 

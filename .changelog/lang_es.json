@@ -12,7 +12,9 @@
         "Las imágenes admiten hasta 16777216 píxeles; los búferes de imagen sin procesar se limitan a 64 MiB"
       ],
       "fix": [
-        "La versión y las ABI del centro de complementos coinciden con el APK instalado"
+        "La versión y las ABI del centro de complementos coinciden con el APK instalado",
+        "La imagen codificada admite hasta 64 MiB mediante descriptores de archivo y tuberías",
+        "Las fechas de versión mantienen un formato uniforme en inglés"
       ]
     },
     "v1.0.1": {
