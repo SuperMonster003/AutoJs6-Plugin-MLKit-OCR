@@ -56,6 +56,7 @@ El complemento AutoJs6 ML Kit OCR proporciona a AutoJs6 reconocimiento de texto 
 - Admite entrada de imagen codificada y entrada de bufer de imagen sin procesar `ARGB_8888`.
 - Los metadatos del complemento, las instrucciones de uso, README y CHANGELOG estan localizados en espanol/frances/ruso/arabe/japones/coreano/ingles/chino simplificado/chino tradicional de Hong Kong/chino tradicional de Taiwan.
 - Basado en `com.google.mlkit:text-recognition-chinese`.
+- Las imágenes admiten hasta 16777216 píxeles; los búferes de imagen sin procesar se limitan a 64 MiB
 
 ******
 
@@ -79,6 +80,14 @@ plugin id: mlkit-ocr-chinese
 ### Historial De Versiones
 
 ******
+
+# v1.0.2
+
+###### 2026/09/13
+
+* `Correccion` La versión y las ABI del centro de complementos coinciden con el APK instalado
+* `Mejora` Validación de las versiones, firmas y variantes completas de los APK antes de crear los archivos de descarga
+* `Mejora` Las imágenes admiten hasta 16777216 píxeles; los búferes de imagen sin procesar se limitan a 64 MiB
 
 # v1.0.1
 
