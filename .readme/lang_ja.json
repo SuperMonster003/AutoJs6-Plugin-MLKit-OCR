@@ -13,7 +13,8 @@
     "`recognizeText` はテキスト行リストを返し, `detect` はテキスト, 信頼度, テキスト行の境界ボックスを返します.",
     "エンコード済み画像入力と `ARGB_8888` の生画像バッファ入力をサポートします.",
     "プラグイン情報, 使用説明, README, CHANGELOG はスペイン語/フランス語/ロシア語/アラビア語/日本語/韓国語/英語/簡体字中国語/香港繁体字中国語/台湾繁体字中国語に対応します.",
-    "`com.google.mlkit:text-recognition-chinese` を基盤にしています."
+    "`com.google.mlkit:text-recognition-chinese` を基盤にしています.",
+    "画像は最大 16777216 ピクセルまで, 生画像バッファーは 64 MiB まで対応"
   ],
   "h3_plugin_interface": "プラグインインターフェイス",
   "p_plugin_interface": "ホストは以下の識別情報でプラグインを検出して呼び出せます",

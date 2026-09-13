@@ -13,7 +13,8 @@
     "Supports `recognizeText` for text line lists and `detect` for text, confidence, and line bounds.",
     "Supports encoded image input and raw `ARGB_8888` image buffer input.",
     "Plugin metadata, usage instructions, README, and CHANGELOG are localized for Spanish, French, Russian, Arabic, Japanese, Korean, English, Simplified Chinese, Hong Kong Traditional Chinese, and Taiwan Traditional Chinese.",
-    "Built on `com.google.mlkit:text-recognition-chinese`."
+    "Built on `com.google.mlkit:text-recognition-chinese`.",
+    "Images may contain at most 16777216 pixels; raw image buffers are limited to 64 MiB"
   ],
   "h3_plugin_interface": "Plugin Interface",
   "p_plugin_interface": "The host can discover and invoke the plugin with the following identity",

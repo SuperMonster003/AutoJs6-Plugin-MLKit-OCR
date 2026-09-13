@@ -56,6 +56,7 @@ Le plugin AutoJs6 ML Kit OCR fournit a AutoJs6 la reconnaissance de texte chinoi
 - Prend en charge les images encodees et les tampons d image bruts `ARGB_8888`.
 - Les metadonnees du plugin, les instructions d utilisation, le README et le CHANGELOG sont localises en espagnol/francais/russe/arabe/japonais/coreen/anglais/chinois simplifie/chinois traditionnel de Hong Kong/chinois traditionnel de Taiwan.
 - Base sur `com.google.mlkit:text-recognition-chinese`.
+- Les images peuvent contenir jusqu'à 16777216 pixels; les tampons bruts sont limités à 64 MiB
 
 ******
 
@@ -79,6 +80,14 @@ plugin id: mlkit-ocr-chinese
 ### Historique Des Versions
 
 ******
+
+# v1.0.2
+
+###### 2026/09/13
+
+* `Correctif` Les informations de version et d'ABI du centre des plugins correspondent à l'APK installé
+* `Amelioration` Validation des versions, signatures et variantes complètes des APK avant la création des fichiers à télécharger
+* `Amelioration` Les images peuvent contenir jusqu'à 16777216 pixels; les tampons bruts sont limités à 64 MiB
 
 # v1.0.1
 

@@ -54,10 +54,8 @@ public class MlKitOcrService extends Service {
             info.setId(getString(R.string.plugin_id));
             info.setEngine(getString(R.string.plugin_engine));
             info.setVariant(getString(R.string.plugin_variant));
-            info.setVersionName(BuildConfig.VERSION_NAME);
-            info.setVersionCode(BuildConfig.VERSION_CODE);
             info.setVersionDate(BuildConfig.VERSION_DATE);
-            info.setSupportedAbis(SUPPORTED_ABIS);
+            org.autojs.plugin.runtime.InstalledPackageIdentity.apply(MlKitOcrService.this, info);
 
             Bundle capabilities = new Bundle();
             capabilities.putInt(PluginCapabilityKeys.REQUIRES_HOST_VERSION, 3923);
@@ -157,38 +155,46 @@ public class MlKitOcrService extends Service {
     }
 
     private Bitmap decodeImage(ParcelFileDescriptor descriptor, OcrOptions options) {
-        Bundle extras = options == null ? null : options.extras;
-        boolean useRaw = extras != null && extras.getBoolean(PaddleOcrOptionExtraKeys.RAW_IMAGE, false);
-        if (useRaw) {
-            int width = extras.getInt(PaddleOcrOptionExtraKeys.RAW_WIDTH, -1);
-            int height = extras.getInt(PaddleOcrOptionExtraKeys.RAW_HEIGHT, -1);
-            int stride = extras.getInt(PaddleOcrOptionExtraKeys.RAW_STRIDE, width * 4);
-            String config = extras.getString(PaddleOcrOptionExtraKeys.RAW_CONFIG);
-            if (width > 0 && height > 0 && Bitmap.Config.ARGB_8888.name().equals(config)) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                    Bitmap decoded;
-                    try {
-                        decoded = tryDecodeSharedMemory(descriptor, width, height, stride);
-                    } catch (Throwable e) {
-                        decoded = null;
+        try {
+            Bundle extras = options == null ? null : options.extras;
+            boolean useRaw = extras != null && extras.getBoolean(PaddleOcrOptionExtraKeys.RAW_IMAGE, false);
+            if (useRaw) {
+                int width = extras.getInt(PaddleOcrOptionExtraKeys.RAW_WIDTH, -1);
+                int height = extras.getInt(PaddleOcrOptionExtraKeys.RAW_HEIGHT, -1);
+                int stride = extras.getInt(PaddleOcrOptionExtraKeys.RAW_STRIDE, width * 4);
+                String config = extras.getString(PaddleOcrOptionExtraKeys.RAW_CONFIG);
+                org.autojs.plugin.runtime.ImageInputBounds.validateRaw(width, height, stride);
+                if (!Bitmap.Config.ARGB_8888.name().equals(config)) throw new IllegalArgumentException("Raw image format must be ARGB_8888");
+                if (width > 0 && height > 0 && Bitmap.Config.ARGB_8888.name().equals(config)) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                        Bitmap decoded;
+                        try {
+                            decoded = tryDecodeSharedMemory(descriptor, width, height, stride);
+                        } catch (Throwable e) {
+                            decoded = null;
+                        }
+                        if (decoded != null) {
+                            closeQuietly(descriptor);
+                            return decoded;
+                        }
                     }
-                    if (decoded != null) {
-                        closeQuietly(descriptor);
-                        return decoded;
-                    }
+                    return decodeRawStream(descriptor, width, height, stride);
                 }
-                return decodeRawStream(descriptor, width, height, stride);
             }
-        }
 
-        try (ParcelFileDescriptor closeable = descriptor) {
-            Bitmap bitmap = BitmapFactory.decodeFileDescriptor(closeable.getFileDescriptor());
-            if (bitmap == null) {
-                throw new IllegalStateException("decode image failed");
+            try (ParcelFileDescriptor closeable = descriptor) {
+                org.autojs.plugin.runtime.ImageInputBounds.validateEncoded(closeable.getFileDescriptor());
+                Bitmap bitmap = BitmapFactory.decodeFileDescriptor(closeable.getFileDescriptor());
+                if (bitmap == null) {
+                    throw new IllegalStateException("decode image failed");
+                }
+                return bitmap;
+            } catch (IOException e) {
+                throw new IllegalStateException("decode image failed", e);
             }
-            return bitmap;
-        } catch (IOException e) {
-            throw new IllegalStateException("decode image failed", e);
+
+        } finally {
+            closeQuietly(descriptor);
         }
     }
 
@@ -234,6 +240,7 @@ public class MlKitOcrService extends Service {
         return bitmap;
     }
 
+    @android.annotation.TargetApi(Build.VERSION_CODES.TIRAMISU)
     private Bitmap tryDecodeSharedMemory(ParcelFileDescriptor descriptor, int width, int height, int stride) throws IOException {
         ParcelFileDescriptor dup = ParcelFileDescriptor.dup(descriptor.getFileDescriptor());
 

@@ -20,6 +20,7 @@ android {
     compileSdk = versions.sdkVersionCompile
 
     defaultConfig {
+        ndk.abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64")
         applicationId = globalApplicationId
 
         minSdk = versions.sdkVersionMin
@@ -130,6 +131,9 @@ androidComponents {
 }
 
 dependencies {
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.3.0")
+    androidTestImplementation("androidx.test:runner:1.7.0")
 
     implementation(files("$rootDir/libs/common-plugin-api.aar"))
     implementation(files("$rootDir/libs/paddle-ocr-api.aar"))
@@ -145,31 +149,11 @@ tasks {
         options.encoding = "UTF-8"
     }
 
-    register<Copy>("appendDigestToReleasedFiles") {
-        description = "Appends CRC32 digest to released APK files"
 
-        val src = "release"
-        val dst = "${src}s"
-        val ext = utils.FILE_EXTENSION_APK
-
-        if (!file(src).isDirectory) {
-            return@register
-        }
-
-        from(src); into(dst); include("*.$ext")
-
-        rename { name ->
-            val abi = name.replace(Regex("^(?:.+?)-v${versions.appVersionName}-(.+?)(\\.$ext)$"), "$1")
-            val releasedFileNamePrefix = "${rootProject.name}-v${versions.appVersionName}-$abi"
-            utils.digestCRC32(file("${src}/$name")).let { digest ->
-                "$releasedFileNamePrefix-$digest.$ext"
-            }
-        }
-
-        doLast { println("Destination: ${file(dst)}") }
-    }
 }
 
 extra {
     versions.handleIfNeeded(project, listOf(buildTypeDebug, buildTypeRelease))
 }
+
+apply(from = rootProject.file("gradle/release-archive.gradle"))
