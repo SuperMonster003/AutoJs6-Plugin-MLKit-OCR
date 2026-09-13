@@ -183,8 +183,7 @@ public class MlKitOcrService extends Service {
             }
 
             try (ParcelFileDescriptor closeable = descriptor) {
-                org.autojs.plugin.runtime.ImageInputBounds.validateEncoded(closeable.getFileDescriptor());
-                Bitmap bitmap = BitmapFactory.decodeFileDescriptor(closeable.getFileDescriptor());
+                Bitmap bitmap = org.autojs.plugin.runtime.ImageInputBounds.decodeEncoded(closeable.getFileDescriptor());
                 if (bitmap == null) {
                     throw new IllegalStateException("decode image failed");
                 }
