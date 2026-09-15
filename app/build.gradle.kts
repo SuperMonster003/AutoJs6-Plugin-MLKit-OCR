@@ -20,7 +20,7 @@ android {
     compileSdk = versions.sdkVersionCompile
 
     defaultConfig {
-        ndk.abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64")
+        ndk.abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
         applicationId = globalApplicationId
 
         minSdk = versions.sdkVersionMin
@@ -102,7 +102,7 @@ android {
         abi {
             isEnable = true
             reset()
-            include("arm64-v8a", "armeabi-v7a", "x86_64")
+            include("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
             isUniversalApk = true
         }
     }

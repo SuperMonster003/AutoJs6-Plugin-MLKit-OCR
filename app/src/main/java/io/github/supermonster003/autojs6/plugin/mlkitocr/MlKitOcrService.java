@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
 public class MlKitOcrService extends Service {
 
     private static final String TAG = "MlKitOcrService";
-    private static final String[] SUPPORTED_ABIS = {"arm64-v8a", "armeabi-v7a", "x86_64"};
+    private static final String[] SUPPORTED_ABIS = {"arm64-v8a", "armeabi-v7a", "x86", "x86_64"};
     private static final long TASK_TIMEOUT_SECONDS = 60L;
 
     private final Object ocrLock = new Object();
