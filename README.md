@@ -82,6 +82,12 @@ plugin id: mlkit-ocr-chinese
 
 ******
 
+# v1.0.3
+
+###### 2026/09/15
+
+* `优化` 将 compileSdk 与 targetSdk 提升到 37 (Android 17), 插件行为不受新目标版本影响
+
 # v1.0.2
 
 ###### 2026/09/13
@@ -98,21 +104,6 @@ plugin id: mlkit-ocr-chinese
 ###### 2026/09/11
 
 * `优化` 构建阶段校验 64 位原生库的 16 KB 页大小对齐, 检查 manifest 契约并输出 JSON 报告
-
-# v1.0.0
-
-###### 2026/09/01
-
-* `新增` ML Kit 中文 OCR 插件服务, 插件 ID 为 `mlkit-ocr-chinese`, 引擎为 `mlkit-ocr`, 变体为 `chinese`
-* `新增` 支持通过共享 OCR AIDL action `org.autojs.plugin.PADDLE_OCR` 发现并调用插件
-* `新增` 提供 `recognizeText` 和 `detect` 接口, 返回识别文本, 置信度和文本行边界框
-* `新增` 支持编码图片输入和 `ARGB_8888` 原始图片缓冲区输入, Android 13 及以上优先尝试 SharedMemory 读取
-* `新增` 插件信息和使用说明的多语言资源: 西班牙语/法语/俄语/阿拉伯语/日语/韩语/英语/简体中文/香港繁体/台湾繁体
-* `新增` README 和 CHANGELOG 的 JSON 源文件及 `.python/generate_markdown.py` 生成流程
-* `新增` 按 ABI 构建 APK, 包括 `arm64-v8a`/`armeabi-v7a`/`x86_64` 以及 `universal` 通用包
-* `新增` 发布 APK 文件名包含版本号, ABI 变体和 CRC32 摘要
-* `优化` 统一 README 版式与 Gradle 平台版本管理方式
-* `优化` 精简插件描述并规范多语言资源中的标点符号
 
 ##### 更多发行历史可参阅
 
