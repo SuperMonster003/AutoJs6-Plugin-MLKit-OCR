@@ -82,6 +82,12 @@ plugin id: mlkit-ocr-chinese
 
 ******
 
+# v1.0.4
+
+###### 2026/10/04
+
+* `Amelioration` Les icônes du centre de plugins utilisent les tailles, positions, images claires et sombres et fonds circulaires réglés dans Icon Studio, avec les sources et paramètres permettant de les reproduire
+
 # v1.0.3
 
 ###### 2026/09/19
@@ -99,12 +105,6 @@ plugin id: mlkit-ocr-chinese
 * `Amelioration` Validation des versions, signatures et variantes complètes des APK avant la création des fichiers à télécharger
 * `Amelioration` Les images peuvent contenir jusqu'à 16777216 pixels; les tampons bruts sont limités à 64 MiB
 * `Amelioration` Étendre les ABI natives et les métadonnées du plugin à arm64-v8a, armeabi-v7a, x86 et x86_64, avec des APK universels et par ABI cohérents
-
-# v1.0.1
-
-###### 2026/09/11
-
-* `Amelioration` Vérification à la compilation de l'alignement des pages de 16 KB des bibliothèques natives 64 bits, avec contrôle du contrat manifest et rapports JSON
 
 ##### Pour plus d historique des versions
 
